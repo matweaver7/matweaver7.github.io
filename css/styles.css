@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'young-robust';
-    src: url('file:///C:/Users/mweaver/personal/sailing/fonts/young-robust.otf'); /* IE9 Compat Modes */
-    src: url('file:///C:/Users/mweaver/personal/sailing/fonts/webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+    src: url('/fonts/young-robust.otf'); /* IE9 Compat Modes */
+    src: url('/fonts/webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 body {
     background-color: #03658C;
@@ -30,7 +30,7 @@ p {
     font-size: 90px;
 }
 div {
-    background: url('file:///C:/Users/mweaver/personal/sailing/images/ocean.jpg');
+    background: url('/images/ocean.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
