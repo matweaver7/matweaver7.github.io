@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'young-robust';
-    src: url('/fonts/young-robust.ttf') format('truetype');
+    src: url('../fonts/young-robust.ttf') format('truetype');
 }
 body {
     background-color: #03658C;
