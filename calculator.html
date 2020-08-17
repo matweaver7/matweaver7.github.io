@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <!-- basic.html -->
+  <title>Grade Calculator</title>
+  <meta charset = "UTF-8" />
+  <script type="text/javascript" src="/javascript/calculator.js"></script>
+</head>
+<body>
+  <div class="container base_parent">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Grade Calculator</h1>
+      </div>
+    </div>
+    <div class="row base">
+      <div class="col-sm-12">
+        <form id="numberOfSections">
+          How Many Sections are there?<br>
+           <input type="number" class="NumberOfSections" name="NumberOfSections"><br><br>
+           What is the total Assignment Worth?<br>
+           <input type="number" class="TotalAssignmentPoints" name="TotalAssignmentPoints"><br><br>
+           <input type="submit" name="submit"><br><br>
+           <input type="submit" value="Reset" name="reset" class="reset"><br>
+         </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <template class="sectionsPercentage" style="display:none">
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="sectionPercentage">
+          <div class="section">
+            <span class="sectionPercentage"></span><br>
+            <input class="section percentage" type="number" min="1" max="100" name="formNumber"><br>
+            
+            <span class="sectionRuberic"></span><br>
+            <input class="section ruberic" type="number" min="1" max="100" name="formRubricPoints"><br><br>
+          </div>      
+          <br><input type="submit" name="submit"><br><br>
+        </form>
+      </div>
+    </div>
+  </template>
+
+
+  <template class="studentScore">
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="studentScore">
+          <div class="section">
+              <p>Score for section 1 (out of 24):</p>
+              <input type="number" name="section" class="section"><br><br>
+          </div>
+
+          <input type="submit" name="submit" id="submit" style="display: block;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;">
+          <input type="submit" value="Reset" name="reset" class="reset"><br>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 mt-5">
+        <h2>Results:</h2>
+        <p>Total percentage: <span id="totalScore">0</span>/100</p>
+        <p>Total points: <span id="totalPoints">0</span>/<span id="pointsPossible"></span></p>
+        <br><br><input type="submit" value="Reset All" name="resetAll" class="resetAll">
+      </div>
+    </div>
+  </template>
+</body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</html>
